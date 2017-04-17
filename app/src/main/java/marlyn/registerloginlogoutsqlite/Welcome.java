@@ -1,7 +1,9 @@
 package marlyn.registerloginlogoutsqlite;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -21,10 +23,12 @@ public class Welcome extends AppCompatActivity {
     ImageView disimage;
     private static final int SELECT_PHOTO = 100;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
 
         TextView txtname = (TextView) findViewById(R.id.txt_success_name);
         disimage = (ImageView) findViewById(R.id.imgclick);
@@ -54,6 +58,10 @@ public class Welcome extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
+                SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.MyPREFERENCES, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.clear();
+                editor.commit();
                 Intent intent = new Intent(Welcome.this,MainActivity.class);
                 startActivity(intent);
                 finish();

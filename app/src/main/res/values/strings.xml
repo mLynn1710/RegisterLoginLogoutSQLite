@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RegisterLoginLogoutSQLite</string>
+    <string name="exit">Exit</string>
 </resources>
