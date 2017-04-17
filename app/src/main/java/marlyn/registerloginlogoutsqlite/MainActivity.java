@@ -57,7 +57,10 @@ public class MainActivity extends Activity {
                             "Congrats: Login Successfull", Toast.LENGTH_LONG)
                             .show();
                     dialog.dismiss();
+
+
                     Intent main = new Intent(MainActivity.this, Welcome.class);
+                    main.putExtra("USERNAME", userName);
                     startActivity(main);
                 } else {
                     Toast.makeText(MainActivity.this,
