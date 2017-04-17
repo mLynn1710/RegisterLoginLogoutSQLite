@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.29"
+        android:paddingTop="40dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/successName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -48,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@color/dark_blue"
+            android:onClick="signIn"
             android:text="Signin"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@color/dark_blue"
+            android:onClick="signUp"
             android:text="Signup"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
